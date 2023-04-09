@@ -2227,7 +2227,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalSpeed: 3000
-  forwardSpeed: 50
+  forwardSpeed: 25
+  increaseSpeedAmount: 0
   deadEffect: {fileID: 1077244705}
 --- !u!96 &848080859
 TrailRenderer:
@@ -3730,7 +3731,7 @@ MonoBehaviour:
   playAgainText: {fileID: 767044969}
   scoreText: {fileID: 44899109}
   score: 0
-  increaseAmount: 1
+  scoreIncreaseAmount: 1
   canStartTime: 0
   BallController: {fileID: 848080858}
 --- !u!4 &1315988323

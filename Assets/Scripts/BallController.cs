@@ -12,6 +12,7 @@ public class BallController : MonoBehaviour
     [Header("@@ BALL PROPS")]
     public float horizontalSpeed = 3000f;
     public float forwardSpeed = 50f;
+    public float increaseSpeedAmount = 5f; 
     private float xLimit = 1.5f;
 
     [Header("@@ ENUM")]
@@ -100,7 +101,8 @@ public class BallController : MonoBehaviour
         if (other.CompareTag("JumpArea"))
         {
             onJumpArea?.Invoke();
-            forwardSpeed += 5f;
+            forwardSpeed += increaseSpeedAmount;
+            
         }
 
         if (other.CompareTag("FinishLine"))

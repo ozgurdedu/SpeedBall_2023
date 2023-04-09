@@ -28,7 +28,7 @@ public class UIManager : MonoBehaviour
     [Header("@@ VARIABLES")]
     public int score;    
     private float timeLeft = 1f;
-    public int increaseAmount = 1;
+    public int scoreIncreaseAmount = 1;
     public bool canStartTime = false;
     
     [Header("@@ CONTROLLERS")]
@@ -70,7 +70,7 @@ public class UIManager : MonoBehaviour
 
     private void OnJumpArea()
     {
-        increaseAmount += 1;
+        scoreIncreaseAmount += 1;
     }
 
     private void OnWon()
@@ -140,13 +140,13 @@ public class UIManager : MonoBehaviour
 
     void IncreaseScore()
     {
-        score += increaseAmount;
+        score += scoreIncreaseAmount;
         scoreText.text =  score.ToString();
     }
 
     private void ResetTheScore()
     {
-        increaseAmount = 1;
+        scoreIncreaseAmount = 1;
         score = 0;
         scoreText.text = score.ToString();
     }
