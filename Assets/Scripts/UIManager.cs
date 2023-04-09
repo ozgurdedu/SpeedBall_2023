@@ -5,7 +5,7 @@ using DG.Tweening;
 using Enums;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
+
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour

@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
             return;
         
         planeIdentities[_activePlaneIndex].gameObject.SetActive(true);
-        planeIdentities[_activePlaneIndex].transform.DOMove(new Vector3(0,-100f,0), 0.5f).From();
+        planeIdentities[_activePlaneIndex].transform.DOMove(new Vector3(-100,-100,150), 1f).From();
         BallController.Jump(planeIdentities[_activePlaneIndex].targetArea);
         
     }

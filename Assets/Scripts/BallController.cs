@@ -69,11 +69,11 @@ public class BallController : MonoBehaviour
     {
 
         gameObject.GetComponent<TrailRenderer>().time = 0.05f;
-        gameObject.transform.DOLocalJump(
+        gameObject.transform.DOJump(
                 targetObject.position + new Vector3(1.5f, 0, 0),
-                25f,
+                50f,
                 1,
-                0.75f,
+                1f,
                 false).SetEase(Ease.InSine)
             .OnUpdate(() => { }) // sağa sola hareket devam etsin.
             .OnComplete(() => { gameObject.GetComponent<TrailRenderer>().time = 0.3f; });
